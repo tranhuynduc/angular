@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container mt-5">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="pills-square-tab" data-toggle="pill" href="#pills-square" role="tab" aria-controls="pills-square" aria-selected="true">Square</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-rectangle-tab" data-toggle="pill" href="#pills-rectangle" role="tab" aria-controls="pills-rectangle" aria-selected="false">Rectangle</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-circle-tab" data-toggle="pill" href="#pills-circle" role="tab" aria-controls="pills-circle" aria-selected="false">Circle</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="pills-triangle-tab" data-toggle="pill" href="#pills-triangle" role="tab" aria-controls="pills-triangle" aria-selected="false">Triangle</a>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-square" role="tabpanel" aria-labelledby="pills-square-tab" data-type="square">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="square-width">Square Width</label>
+            <input type="text" class="form-control" id="square-width" aria-describedby="area go here" >
+          </div>
+          </div>
+        </div>
+      <div class="tab-pane fade" id="pills-rectangle" role="tabpanel" aria-labelledby="pills-rectangle-tab" data-type="rectangle">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="rectangle-width">Rectangle Width</label>
+            <input type="text" class="form-control" id="rectangle-width" aria-describedby="area go here" >
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="rectangle-height">Rectangle Height</label>
+            <input type="text" class="form-control" id="rectangle-height" aria-describedby="area go here" >
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-circle" role="tabpanel" aria-labelledby="pills-circle-tab" data-type="circle">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="circle-radius">Circle Radius</label>
+            <input type="text" class="form-control" id="circle-radius" aria-describedby="area go here" >
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-triangle" role="tabpanel" aria-labelledby="pills-triangle-tab" data-type="triangle">
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="triangle-width">Triangle Width</label>
+            <input type="text" class="form-control" id="triangle-width" aria-describedby="area go here" >
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="triangle-height">Triangle Height</label>
+            <input type="text" class="form-control" id="triangle-height" aria-describedby="area go here" >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <input id="get-area" type="button" class="btn btn-primary btn-lg" value="Get Area" data-type="btn">
+    </div>
+    <!-- <div class="form-group">
+      <label for="result">Result</label>
+      <input type="text" class="form-control" id="result" aria-describedby="area go here" readonly>
+    </div> -->
+    <div class="result">
+      <p class="text-danger" id="message">Danger</p>
+    </div>
+
+    <canvas width="500" height="500" id="myCanvas"></canvas>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
